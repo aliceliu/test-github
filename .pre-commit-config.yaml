@@ -32,9 +32,3 @@ repos:
   #   rev: "" # Use the sha or tag you want to point at
   #   hooks:
   #     - id: prettier
-  - repo: https://github.com/siderolabs/conform
-    rev: master
-    hooks:
-      - id: conform
-        stages:
-          - commit-msg
