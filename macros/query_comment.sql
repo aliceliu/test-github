@@ -1,4 +1,4 @@
-{% macro get_query_comment(node) %}
+{% macro query_comment(node) %}
     {%- set comment_dict = {} -%}
     {%- do comment_dict.update(
         app='dbt',
