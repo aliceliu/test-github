@@ -67,9 +67,9 @@
     ) -%}
     {%- endif -%}
 
-    {%- if env_var('ACCOUNT_ID', False) -%}
+    {%- if env_var('DBT_CLOUD_ACCOUNT_ID', False) -%}
     {%- do comment_dict.update(
-        dbt_cloud_account_id=env_var('ACCOUNT_ID')
+        dbt_cloud_account_id=env_var('DBT_CLOUD_ACCOUNT_ID')
     ) -%}
     {%- endif -%}
 
