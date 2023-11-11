@@ -63,13 +63,13 @@
 
     {%- if env_var('DBT_CLOUD_ENVIRONMENT_ID', False) -%}
     {%- do comment_dict.update(
-        dbt_cloud_project_id=env_var('DBT_CLOUD_ENVIRONMENT_ID')
+        dbt_cloud_environment_id=env_var('DBT_CLOUD_ENVIRONMENT_ID')
     ) -%}
     {%- endif -%}
 
     {%- if env_var('ACCOUNT_ID', False) -%}
     {%- do comment_dict.update(
-        dbt_cloud_project_id=env_var('ACCOUNT_ID')
+        dbt_cloud_account_id=env_var('ACCOUNT_ID')
     ) -%}
     {%- endif -%}
 
